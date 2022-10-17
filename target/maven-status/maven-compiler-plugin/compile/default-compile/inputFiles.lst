@@ -1,0 +1,9 @@
+H:\JAVA\TestTasks\CRUD\CRUD\src\main\java\testTask\config\AppInitializer.java
+H:\JAVA\TestTasks\CRUD\CRUD\src\main\java\testTask\service\UserServiceImpl.java
+H:\JAVA\TestTasks\CRUD\CRUD\src\main\java\testTask\dao\UserDAOImpl.java
+H:\JAVA\TestTasks\CRUD\CRUD\src\main\java\testTask\model\User.java
+H:\JAVA\TestTasks\CRUD\CRUD\src\main\java\testTask\service\IUserService.java
+H:\JAVA\TestTasks\CRUD\CRUD\src\main\java\testTask\config\WebConfig.java
+H:\JAVA\TestTasks\CRUD\CRUD\src\main\java\testTask\dao\IUserDAO.java
+H:\JAVA\TestTasks\CRUD\CRUD\src\main\java\testTask\Main.java
+H:\JAVA\TestTasks\CRUD\CRUD\src\main\java\testTask\controller\UserController.java

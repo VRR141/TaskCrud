@@ -1,0 +1,9 @@
+testTask\config\WebConfig.class
+testTask\model\User.class
+testTask\dao\IUserDAO.class
+testTask\config\AppInitializer.class
+testTask\controller\UserController.class
+testTask\dao\UserDAOImpl.class
+testTask\Main.class
+testTask\service\UserServiceImpl.class
+testTask\service\IUserService.class
