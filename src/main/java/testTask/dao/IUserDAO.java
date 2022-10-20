@@ -10,7 +10,7 @@ public interface IUserDAO {
 
     void create(User user);
 
-    User read(long id);
+    User read(int id);
 
     void update(User user);
 

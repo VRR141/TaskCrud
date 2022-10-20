@@ -5,11 +5,11 @@
   Time: 20:14
   To change this template use File | Settings | File Templates.
 --%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-  <title>Update</title>
   <c:if test="${empty user.surname}">
     <title>Create</title>
   </c:if>
@@ -25,8 +25,8 @@
   <c:url value="/update" var="var"/>
 </c:if>
 <form action="${var}" method="POST">
-  <c:if test="${!empty user.surname}}">
-    <input type = "hidden" name = "id" value="${user.id}">
+  <c:if test="${!empty user.surname}">
+    <input type="hidden" name="id" value="${user.id}">
   </c:if>
   <label for="surname">surname</label>
   <input type="text" name="surname" id="surname">
@@ -41,10 +41,10 @@
   <label for="phoneNumber">phoneNumber</label>
   <input type="text" name="phoneNumber" id="phoneNumber">
   <c:if test="${empty user.surname}">
-    <input type="submit" value="Create new user">
+    <input type="submit" value="Add new film">
   </c:if>
   <c:if test="${!empty user.surname}">
-    <input type="submit" value="Update user">
+    <input type="submit" value="Edit user">
   </c:if>
 </form>
 </body>

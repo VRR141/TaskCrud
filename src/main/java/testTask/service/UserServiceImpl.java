@@ -2,6 +2,7 @@ package testTask.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import testTask.dao.IUserDAO;
 import testTask.dao.UserDAOImpl;
 import testTask.model.User;
@@ -18,26 +19,31 @@ public class UserServiceImpl implements IUserService{
     }
 
     @Override
+    @Transactional
     public List<User> allUsers() {
         return userDAO.allUsers();
     }
 
     @Override
+    @Transactional
     public void create(User user) {
         userDAO.create(user);
     }
 
     @Override
-    public User read(long id) {
+    @Transactional
+    public User read(int id) {
         return userDAO.read(id);
     }
 
     @Override
+    @Transactional
     public void update(User user) {
         userDAO.update(user);
     }
 
     @Override
+    @Transactional
     public void delete(User user) {
         userDAO.delete(user);
     }

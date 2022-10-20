@@ -1,22 +1,31 @@
 package testTask.model;
 
-import java.time.LocalDate;
-
+import javax.persistence.*;
+@Entity
+@Table(name = "crud")
 public class User {
-
-    private long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private int id;
+    @Column(name = "surname")
     private String surname;
+    @Column(name = "firstname")
     private String firstname;
+    @Column(name = "patronymic")
     private String patronymic;
+    @Column(name = "dateofbirth")
     private String dateOfBirth;
+    @Column(name = "email")
     private String email;
+    @Column(name = "phonenumber")
     private String phoneNumber;
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
